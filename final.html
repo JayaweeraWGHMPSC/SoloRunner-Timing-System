@@ -1,0 +1,291 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <Style>
+        body {
+            min-height: 100vh;
+            margin-bottom: 60px;
+        }
+        .header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-align: justify;
+            margin: auto;
+            padding: 1px;
+            background: #ffffff;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+            z-index: 1000;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            padding-right: 30px;
+        }
+
+        .qe{
+            width: 300px;
+            height: 50px;
+            padding-left: 30px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        #navbar {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        #navbar li .n:hover {
+            color: rgba(47, 19, 67, 0.931);;
+        }
+
+        #navbar li {
+            list-style: none;
+            padding: 0 25px;
+        }
+
+        #navbar li .n{
+            text-decoration: none;
+            font-family: "Rubik", sans-serif;
+            font-size: 18px;
+            font-weight: 200;
+            color: #0a0a0a;
+            transition: 0.3s ease;
+        }
+
+        #navbar li .n:hover{
+            text-decoration: solid underline rgb(162, 167, 154) 2px;
+            font-family: "Rubik", sans-serif;
+            transition: 0.9s ease;
+            color: rgba(47, 19, 67, 0.931);;
+        }
+
+        .box1 {
+            position: fixed;
+            top: 0;
+            right: 0;
+            height: 100vh;
+            width: 250px;
+            z-index: 999;
+            box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+            backdrop-filter: blur(10px);
+            display: none;
+            flex-direction: column;
+        }
+
+        #navbar1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            justify-content: flex-start;
+            
+        }
+
+        #navbar1 a:hover {
+            background-color: #f0f0f0;
+        } 
+
+        #navbar1 li {
+            list-style: none;
+            position: relative;
+            padding: 20px 25px;
+            width: 100%;
+        }
+
+        #navbar1 li .n{
+            text-decoration: none;
+            font-family: "Rubik", sans-serif;
+            font-size: 18px;
+            font-weight: 200;
+            color: #0a0a0a;
+            transition: 0.3s ease;
+        }
+
+        .menu_b{
+            display: none;
+        }
+
+        @media(max-width: 800px){
+            .hideOnMobile{
+                display: none;
+            }
+            .menu_b{
+                display: block;
+                margin-right: auto;
+            }
+            .box .box_3 ,.e{
+            
+                padding: 0 10px;
+            }
+            
+            #e3{
+                padding-right: 60px;
+            }
+
+            .box1 {
+                width: 80%;
+            }
+
+        }
+
+        @media(max-width: 400px){
+            .box1{
+            width: 100%;
+            }
+            .qe{
+                width: 70%; 
+                height: 50%; 
+                max-width: 300px;
+            }
+        }
+
+        .box1 {
+            display: none; /* Initially hide the sidebar */
+            overflow: hidden; /* Hide any content that overflows the sidebar */
+            max-height: 0; /* Start with zero height */
+            transition: max-height 1s ease; /* Transition max-height property over 1 second with ease */
+            /* Additional styling for your sidebar */
+        }
+
+
+
+
+
+
+
+        .secondtopic{
+            text-align: center;
+            color: rgb(37, 35, 35);
+            font-size: 25px;
+            font-family: sans-serif;
+            margin-top: 40px;
+            padding-bottom: 30px;
+            font-weight: 300;
+        }
+
+        @media (max-width: 900px){
+            table{
+                width: 70%;
+                height: auto;
+                margin: 20;
+            }
+        }
+
+        table {
+            margin: 0 auto;
+            padding-top: 100px;
+            border-collapse: collapse;
+            border-width: 10px;
+            width: 85%;
+            font-size: 18px;
+            text-align: center;
+            font-family: sans-serif;
+            padding-bottom: 50px;
+            box-shadow: 4PX rgba(0, 0, 0, 0.3);
+        }
+
+        th{
+            color: white;
+            background-color: #183BD5;
+            height: auto;
+            padding: 10px;
+        }
+
+        td{
+            color: black;
+            background-color: rgb(222, 222, 222);
+            height: auto;
+            font-size: 18px;
+            font-family: sans-serif;
+            font-weight: 120;
+            text-align: center;
+        }
+
+        th,td{
+            border: 4px solid rgb(255, 255, 255); 
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        .camrecords{
+            color: black;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        
+        .box a{
+            text-decoration: none;
+        }
+    </Style>
+
+    <script type="module" src="final.js" defer></script>
+</head>
+<body>
+    
+    <section class="header">
+        <div class="box">
+            <a href="final.html">
+                <img class="qe" src="run0001.png" >
+                
+            </a>
+        </div>
+
+    
+        <div class="box hideOnMobile">
+            <ul id="navbar">
+
+                <li><a class="n" href="final.html">Dashboard</a></li>
+                <li><a class="n" href="prograss.html">Progress</a></li>
+                <li><a class="n" href="about.html">About Us</a></li>
+            </ul>
+        </div>    
+    </section>
+
+    <div class="container">
+        <main>
+            <div class="head">
+                <br>
+                <div class="secondtopic"><b>Daily Training Overview ......  </b></div>
+            </div>
+            <div class="details"> 
+                <table class="table">
+                    <thead>
+                        <th>Date</th>
+                        <th>Start Time</th>
+                        <th>Leg Release Time</th>
+                        <th>End Time</th>
+                        <th>Timing</th>
+                        <th>Block Position</th>
+                    </thead>
+                    <tbody id="tbody1"></tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        function logout(){
+            alert('Good Bye');
+        }
+
+        import {username} from 'C:/Users/pathu/Desktop/Project/web/login.js'
+        alert(username) ;
+    </script>
+
+
+
+        
+</body>
+
+</html>
