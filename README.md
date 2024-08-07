@@ -1,0 +1,2 @@
+# SoloRunner-Timing-System
+A revolutionary timing system for running tracks, empowering athletes with accurate timing, immediate feedback, and comprehensive data analysis to optimize performance and training efficiency.
